@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -13,19 +14,23 @@
             <section>
                 <h2>Realizar login</h2>
                 <form>
-                    <label for="usuario">Nome de usuário:</label>
-                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome de usuário..." required><br>
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha..." required><br>
-                    <button>Entrar</button>
+                    <div class="infoUsuario">
+                        <label for="usuario">Nome de usuário:</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome de usuário..." required>
+                    </div>
+                    <div class="infoUsuario">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha..." required>
+                    </div>
+                        <button type="submit">Entrar</button>
                 </form>
             </section>
         </main>
         <footer>
             <section>
-                <fieldset>
+                <div class="texto-footer">
                     <p>Não possui cadastro? Faça clicando <a href="cadastro.html">aqui</a></p>
-                </fieldset>
+                </div>
             </section>
         </footer>
     </body>

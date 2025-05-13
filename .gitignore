@@ -4,3 +4,12 @@
 # Arquivos de sistema
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Arquivos temporários e backups
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+*.bak
