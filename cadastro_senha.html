@@ -4,18 +4,21 @@
     <head>
         <meta charset="UTF-8">
         <title>Cadastro-Senha</title>
+        <link rel="stylesheet" href="style_senha.css">
     </head>
     <body>
-        <header>
-            <h3>Crie uma senha</h3>
-        </header>
         <main>
             <section>
+                <h3>Crie uma senha</h3>
                 <form>
-                    <label for="senha_cadastro">Crie uma senha: </label>
-                    <input type="password" id="senha_cadastro" name="senha_cadastro" placeholder="Crie sua senha..." required><br>
-                    <label for="senha_cadastro_confirmacao">Digite novamente sua senha:</label>
-                    <input type="password" id="senha_cadastro_confirmacao" name="senha_cadastro_confirmacao" placeholder="Digite sua senha..." required><br>
+                    <div class="info_senha">
+                        <label for="senha_cadastro">Crie uma senha: </label>
+                        <input type="password" id="senha_cadastro" name="senha_cadastro" placeholder="Crie sua senha..." required>
+                    </div>
+                    <div class="info_senha">
+                        <label for="senha_cadastro_confirmacao">Digite novamente sua senha:</label>
+                        <input type="password" id="senha_cadastro_confirmacao" name="senha_cadastro_confirmacao" placeholder="Digite sua senha..." required>
+                    </div>
                     <button>Cadastrar</button>
                 </form>
             </section>

@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Cadastro</title>
-</head>
-<body>
-    <header>
-        <h1>Página de cadastro</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Realizar cadastro</h2>
-            <form>
-                <p>Crie um nome de usuário</p>
-                <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Crie um nome de usuário" required><br>
-                <p>Digite seu nome completo</p>
-                <input type="text" id="nome_completo" name="nome_completo" placeholder="Digite o seu nome completo" required><br>
-                <p>Digite seu CPF</p>
-                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required><br>
-                <button type="button" onclick="window.location.href='cadastro_senha.html'">Próximo</button>
-            </form>
-        </section>
-    </main>
-    <footer></footer>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="style_cadastro.css">
+    </head>
+    <body>
+        <header>
+            <h1>Página de cadastro</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Realizar cadastro</h2>
+                <form>
+                    <div class="CadastroUsuario">
+                        <label for="nome_usuario">Crie um nome de usuário</label>
+                        <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Crie um nome de usuário" required>
+                    </div>
+                    <div class="CadastroUsuario">
+                        <label for="nome_completo">Digite seu nome completo</label>
+                        <input type="text" id="nome_completo" name="nome_completo" placeholder="Digite o seu nome completo" required>
+                    </div>
+                    <div class="CadastroUsuario">
+                        <label for="cpf">Digite seu CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                    </div>
+                    <!-- Analisar questão do botão com JavaScript -->
+                    <button type="submit" onclick="window.location.href='cadastro_senha.html'">Próximo</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
